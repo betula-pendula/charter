@@ -1,0 +1,18 @@
+npm i vue-cli -g (Install Vue-cli)
+
+npm i npm (new NodeJS)
+
+npm ls -g --depth=0 (global version)
+
+vue init webpack-simple
+
+npm ls
+
+npm i
+
+npm ls --depth=0
+
+npm run dev (localhost)
+
+npm run build (production)
+
