@@ -1,5 +1,13 @@
 <template>
   <div id="app">
+    <ul class="grid-container">
+      <li class="grid-item">1</li>
+      <li class="grid-item">2</li>
+      <li class="grid-item">3</li>
+      <li class="grid-item">1</li>
+      <li class="grid-item">2</li>
+    </ul>
+    <charter></charter>
     <img src="./assets/logo.png">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
@@ -20,12 +28,17 @@
 </template>
 
 <script>
+import Charter from './Charter.vue'
+
 export default {
   name: 'app',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components: {
+    Charter
   }
 }
 </script>
@@ -37,7 +50,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 
 h1, h2 {
@@ -51,10 +63,26 @@ ul {
 
 li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 0px;
 }
 
 a {
   color: #42b983;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 30px 30px;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 30px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  font-size: 30px;
+  text-align: center;
 }
 </style>

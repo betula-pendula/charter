@@ -1,0 +1,17 @@
+{
+    "1":[
+        {"name":"Anton1", "model":"567"},
+        {"name":"Anton2", "model":"567"},
+        {"name":"Anton3", "model":"567"}
+    ],
+    "2":[
+        {"name":"Anton2", "model":"567"},
+        {"name":"Anton2", "model":"567"},
+        {"name":"Anton3", "model":"567"}
+    ],
+    "3":[
+        {"name":"Anton3", "model":"567"},
+        {"name":"Anton2", "model":"567"},
+        {"name":"Anton3", "model":"567"}
+    ]
+}
