@@ -8,15 +8,6 @@
 
 <script>
 import charters from './data.json'
-//const charter = (name, model, owner, year, phone, image) => ({name, model, owner, year, phone, image})
-
-//const charters = [
-//  charter('Anton','qwe','rty','ghj','345'),
-//  charter('Anton','qwe','rty','ghj','345'),
-//  charter('Anton','qwe','rty','ghj','345'),
-//]
-
-//const charters = require('./data.json')
 
 export default {
   el: '#charter',
