@@ -16,6 +16,7 @@
                     <input
                       class="form-control"
                       type="text"
+                      v-model="test"
                       placeholder="Где вы планируете отдых на яхте"
                     >
                   </div>
@@ -95,7 +96,7 @@
                     </div>
                   </div>
                   <div class="form-btn">
-                    <button class="submit-btn">Проверить наличие яхт</button>
+                    <button class="submit-btn" v-on:click="greet">Проверить наличие яхт</button>
                   </div>
                 </form>
               </div>
@@ -121,10 +122,18 @@ export default {
   el: "#charter",
   data() {
     return {
-      charters: charters
+      charters: charters,
+      name: 'Anton',
+      test: 'Где вы планируете отдых на яхте'
     };
+  },
+  methods: {
+    greet: function (event) {
+      location.href = 'https://script.google.com/macros/s/AKfycbzF5x2o6ouAAH21vUfBu017lyssl0FYHfGj0MoltM5vcjrvzbVE/exec?sdata=' + this.test;
+    }
   }
 };
+
 </script>
 
 <style>
