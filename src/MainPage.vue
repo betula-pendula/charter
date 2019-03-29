@@ -17,18 +17,12 @@ import charters from './data.json'
 //const charters = require('./data.json')
 
 export default {
-  el: '#main-page',
-  data () {
-    return {
-      charters: charters
-    }
-  }
+  el: '#main-page'
 }
 </script>
 
 <style scope>
 #main-page {
-  height: 100vh;
   /*background: url(./img/background-main-page.jpg) no-repeat;*/
   -moz-background-size: 100%;
   -webkit-background-size: 100%;

@@ -11,12 +11,15 @@ export default {
   el: '#about',
   data () {
     return {
-      charters: about
+      about
     }
   }
 }
 </script>
 
 <style>
-
+#about {
+  background-color: #cccccc;
+  height: 100vh;
+}
 </style>

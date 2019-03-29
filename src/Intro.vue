@@ -1,19 +1,21 @@
 <template>
-    <div id="intro">
-        <p>Привет!</p>
-    </div>
+  <div id="intro">
+    <banner-intro></banner-intro>
+    <yaht-view></yaht-view>
+  </div>
 </template>
 
 <script>
+import BannerIntro from "./BannerIntro.vue";
+import YahtView from "./YahtView.vue";
 
 export default {
-  el: '#intro',
-  data () {
-    return {
-      charters: intro
-    }
+  el: "#intro",
+  components: {
+    BannerIntro,
+    YahtView
   }
-}
+};
 </script>
 
 <style>

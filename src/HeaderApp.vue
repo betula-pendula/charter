@@ -1,9 +1,9 @@
 <template>
   <div id="header-app">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">
+      <router-link class="nav-link" to="/">
         <img src="/src/assets/logo.png" width="60" height="60" alt>
-      </a>
+      </router-link>
       <button
         class="navbar-toggler"
         type="button"
